@@ -6,6 +6,7 @@ public class MergeSorter {
 
         int L[] = new int[n1];//temp arrays
         int R[] = new int[n2];//temp arrays
+
         //Copy data to temp arrays
         for (int i = 0; i < n1; ++i)
             L[i] = arr[l + i];
