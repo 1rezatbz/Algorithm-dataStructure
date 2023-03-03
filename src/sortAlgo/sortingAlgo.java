@@ -10,6 +10,10 @@ public class sortingAlgo {
         System.out.println(Arrays.toString(data));
     }
 
+    public static void QuickSort(){
+
+    }
+
     public static void BubbleSort(int[] data) {
         for (int i = 0; i < data.length - 1; i++) {
             for (int j = 0; j < data.length - 1 - i; j++) {
