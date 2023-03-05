@@ -18,6 +18,7 @@ public class CountingSorter {
     }
 
 
+
     public static void main(String[] args){
         CountingSorter sorter = new CountingSorter();
         Integer[] data = new Integer [] {3, 10, 2, 4, 2, 6, 9, 5, 7, 2, 8, 10, 3,9};
