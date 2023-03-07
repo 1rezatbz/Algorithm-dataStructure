@@ -69,6 +69,7 @@ public class heap {
             fixDown(0, currentPosition-i-1);
         }
     }
+
     @Override
     public String toString(){return Arrays.deepToString(this.heapData);}
 
