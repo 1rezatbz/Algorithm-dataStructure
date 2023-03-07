@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 public class heap {
     private Integer[] heapData;
+
     private int currentPosition = -1;
+
     public heap(int size){this.heapData = new Integer[size];}
     public void insert(int item){
         if(isFull()){throw new RuntimeException("Heap is full");}
