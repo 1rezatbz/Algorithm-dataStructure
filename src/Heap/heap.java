@@ -8,6 +8,7 @@ public class heap {
     private int currentPosition = -1;
 
     public heap(int size){this.heapData = new Integer[size];}
+
     public void insert(int item){
         if(isFull()){throw new RuntimeException("Heap is full");}
         this.heapData[++currentPosition]=item;
@@ -19,6 +20,7 @@ public class heap {
         heapData[currentPosition+1]=null;
         fixDown(0, -1);
         return  result;}
+
     private void fixDown(int index, int upto) {
         if (upto < 0) upto = currentPosition;
         while (index <= upto) {
@@ -56,6 +58,7 @@ public class heap {
             i= (index-1)/2;
         }
     }
+
     private boolean isFull(){return currentPosition==heapData.length-1;}
     // Heap Sort could be called in a heap array, and then we call heapSort on it
     public void heapSort(){
@@ -68,10 +71,12 @@ public class heap {
     }
     @Override
     public String toString(){return Arrays.deepToString(this.heapData);}
+
     public static heap heapify(int[] data){
         heap h = new heap(data.length);
         for(int i =0; i< data.length;i++){h.insert(data[i]);};
         return h;}
+
     public static void main(String[] args) {
         heap h = new heap(10);
         h.insert(10);
